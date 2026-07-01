@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Mendal 💜</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ======================================================
+         BACKGROUND EFFECTS
+    ======================================================= -->
+
+    <div class="background-gradient"></div>
+
+    <div class="background-blur blur1"></div>
+    <div class="background-blur blur2"></div>
+    <div class="background-blur blur3"></div>
+
+    <div id="particles"></div>
+    <div id="floatingHearts"></div>
+
+    <!-- ======================================================
+         HERO SECTION
+    ======================================================= -->
+
+    <section id="hero" class="screen active">
+
+        <div class="hero-container">
+
+            <!-- LEFT SIDE -->
+
+            <div class="hero-left">
+
+                <span class="hero-tag reveal reveal-1">
+
+                    ✨ Made with lots of love
+
+                </span>
+
+                <h1 class="reveal reveal-2">
+
+                    Happy<br>Birthday
+
+                </h1>
+
+                <h2 class="reveal reveal-3">
+
+                    Mendal 💜
+
+                </h2>
+
+                <div class="hero-text">
+
+                    <p class="reveal reveal-4">
+
+                        Hey Crack uh... 👀
+
+                    </p>
+
+                    <p class="reveal reveal-5">
+
+                        Before your nonstop radio starts...
+
+                    </p>
+
+                    <p class="reveal reveal-6">
+
+                        I made something special just for you.
+
+                    </p>
+
+                    <p class="reveal reveal-7">
+
+                        Take a deep breath.
+
+                    </p>
+
+                    <p class="reveal reveal-8">
+
+                        Smile.
+
+                    </p>
+
+                    <p class="reveal reveal-9">
+
+                        Enjoy every moment.
+
+                    </p>
+
+                </div>
+
+                <button
+                    id="startButton"
+                    class="primary-btn reveal reveal-10">
+
+                    Open Your Surprise
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="hero-right">
+
+                <div class="photo-frame">
+
+                    <img
+                        src="assets/images/hero.jpg"
+                        alt="Kavya">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+         LOCK SCREEN
+    ======================================================= -->
+
+    <section id="lockScreen" class="screen">
+
+        <div class="lock-card">
+
+            <div class="lock-icon">
+
+                <i class="fa-solid fa-lock"></i>
+
+            </div>
+
+            <h2>
+
+                Secret Passcode
+
+            </h2>
+
+            <p>
+
+                Only Mendal knows the code 💜
+
+            </p>
+
+            <div class="pin-box">
+
+                <input
+                    id="password"
+                    type="password"
+                    maxlength="4"
+                    placeholder="1105">
+
+            </div>
+
+            <p id="errorMessage"></p>
+
+            <button
+                id="unlockButton"
+                class="primary-btn">
+
+                Unlock
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+         ENVELOPE SECTION
+    ======================================================= -->
+
+    <section
+        id="envelopeSection"
+        class="screen">
+
+        <div class="envelope-container">
+
+            <span class="section-tag">
+
+                💌 A Letter For You
+
+            </span>
+
+            <h2>
+
+                Before We Continue...
+
+            </h2>
+
+            <p>
+
+                Someone wrote something from the heart.
+
+            </p>
+
+            <div
+                id="envelope"
+                class="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter">
+
+                    <div class="letter-top">
+
+                        💜
+
+                    </div>
+
+                    <div class="letter-body">
+
+                        Click To Open
+
+                    </div>
+
+                </div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-flap"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+         LETTER SECTION
+         (PART 2 CONTINUES FROM HERE)
+    ======================================================= -->
+    <section id="letterSection" class="screen">
+
+        <div class="letter-paper">
+
+            <div class="paper-header">
+
+                <span class="section-tag">
+
+                    💜 From Your Anna
+
+                </span>
+
+                <h2>
+
+                    A Letter For Mendal
+
+                </h2>
+
+            </div>
+
+            <div id="typewriter" class="letter-content">
+
+                <!-- JavaScript will type the birthday message here -->
+
+            </div>
+
+            <div class="letter-footer">
+
+                <button
+                    id="continueButton"
+                    class="primary-btn">
+
+                    Continue Our Journey
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ======================================================
+         PHOTO GALLERY
+    ======================================================= -->
+
+    <section id="gallerySection" class="screen">
+
+        <div class="gallery-container">
+
+            <div class="gallery-header">
+
+                <span class="section-tag">
+
+                    📸 Beautiful Memories
+
+                </span>
+
+                <h2>
+
+                    Every Picture Has A Story
+
+                </h2>
+
+                <p>
+
+                    Some memories fade...
+                    <br>
+                    Ours only become more beautiful.
+
+                </p>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item gallery-large">
+                    <img src="assets/images/photo1.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo2.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo3.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo4.jpg" alt="">
+                </div>
+
+                <div class="gallery-item gallery-wide">
+                    <img src="assets/images/photo5.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo6.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo7.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo8.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo9.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo10.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div class="gallery-button">
+
+                <button
+                    id="galleryNextButton"
+                    class="primary-btn">
+
+                    Next Surprise
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ======================================================
+         ABOUT MENDAL
+    ======================================================= -->
+
+    <section id="aboutSection" class="screen">
+
+        <div class="about-container">
+
+            <span class="section-tag">
+
+                💜 About Mendal
+
+            </span>
+
+            <h2>
+
+                The One And Only
+
+            </h2>
+
+            <div class="about-grid">
+
+                <div class="about-card">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <h3>Nickname</h3>
+
+                    <p>
+
+                        Crack uh 😂
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <i class="fa-solid fa-microphone"></i>
+
+                    <h3>Special Talent</h3>
+
+                    <p>
+
+                        Non-stop Radio 📻
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <i class="fa-solid fa-face-laugh"></i>
+
+                    <h3>Personality</h3>
+
+                    <p>
+
+                        Certified Family Lunatic 🤪
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <h3>Dream</h3>
+
+                    <p>
+
+                        Future CA 👩🏻‍💼
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h3>Superpower</h3>
+
+                    <p>
+
+                        Making Everyone Smile ❤️
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <i class="fa-solid fa-crown"></i>
+
+                    <h3>Title</h3>
+
+                    <p>
+
+                        Queen of Chaos 👑
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ======================================================
+         MEMORIES SECTION
+    ======================================================= -->
+
+    <section id="memorySection" class="screen">
+
+        <div class="memory-container">
+
+            <span class="section-tag">
+
+                💖 Little Things
+
+            </span>
+
+            <h2>
+
+                Reasons You're Special
+
+            </h2>
+
+            <div class="memory-list">
+
+                <div class="memory-item">
+
+                    ❤️ You make ordinary days unforgettable.
+
+                </div>
+
+                <div class="memory-item">
+
+                    😂 Your crazy jokes never stop.
+
+                </div>
+
+                <div class="memory-item">
+
+                    🎧 You're literally a walking FM radio.
+
+                </div>
+
+                <div class="memory-item">
+
+                    📚 You never give up on your CA dream.
+
+                </div>
+
+                <div class="memory-item">
+
+                    🌸 You'll always be my little sister.
+
+                </div>
+
+            </div>
+
+            <button
+                id="memoryNextButton"
+                class="primary-btn">
+
+                Continue
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ======================================================
+         TIMELINE
+         PART 3 CONTINUES FROM HERE
+    ======================================================= -->
+    <section id="timelineSection" class="screen">
+
+        <div class="timeline-container">
+
+            <span class="section-tag">
+
+                🕰 Your Journey
+
+            </span>
+
+            <h2>
+
+                Every Chapter Matters
+
+            </h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>02 July 2003</h3>
+
+                        <p>
+
+                            A beautiful girl named Kavya came into this world.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>Growing Up</h3>
+
+                        <p>
+
+                            Filled every room with laughter, madness and happiness.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>CA Journey</h3>
+
+                        <p>
+
+                            One of the toughest professional courses, but you chose it with courage.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>Future</h3>
+
+                        <p>
+
+                            Soon everyone will proudly call you <strong>CA Kavya</strong>.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button
+                id="timelineNextButton"
+                class="primary-btn">
+
+                Final Surprise
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         FINAL SCREEN
+    ======================================================= -->
+
+    <section id="finalSection" class="screen">
+
+        <div class="final-card">
+
+            <h1>
+
+                Happy Birthday
+
+            </h1>
+
+            <h2>
+
+                Mendal 💜
+
+            </h2>
+
+            <p class="final-message">
+
+                It's hard to describe someone like you.
+
+                <br><br>
+
+                You're the kind of person who can turn an ordinary day
+                into a memorable one just by being yourself.
+
+                <br><br>
+
+                Whether it's your endless conversations,
+
+                your crazy ideas,
+
+                or the laughter you bring everywhere,
+
+                life is never boring with you around.
+
+                <br><br>
+
+                Behind all the fun is someone incredibly hardworking.
+
+                <br><br>
+
+                I know how much effort you're putting into becoming
+
+                <strong>CA Kavya.</strong>
+
+                <br><br>
+
+                I truly believe you'll make it.
+
+                <br><br>
+
+                No matter how much I tease you
+
+                or call you
+
+                <strong>"Crack uh"</strong>,
+
+                you'll always be my little sister.
+
+                <br><br>
+
+                I'm proud of you.
+
+                <br><br>
+
+                Keep laughing.
+
+                <br>
+
+                Keep dreaming.
+
+                <br>
+
+                Keep being wonderfully you.
+
+            </p>
+
+            <div class="signature">
+
+                ❤️
+
+                <br><br>
+
+                With Love,
+
+                <br>
+
+                <strong>Your Anna</strong>
+
+            </div>
+
+            <button
+                id="celebrateButton"
+                class="primary-btn">
+
+                Celebrate 🎉
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         FIREWORKS
+    ======================================================= -->
+
+    <div id="fireworks"></div>
+
+    <canvas id="confettiCanvas"></canvas>
+
+
+
+    <!-- ======================================================
+         AUDIO (Optional)
+    ======================================================= -->
+
+    <audio
+        id="birthdayMusic"
+        preload="auto">
+
+        <!--
+        Optional:
+        assets/music/birthday.mp3
+        -->
+
+    </audio>
+
+
+
+    <!-- ======================================================
+         FOOTER
+    ======================================================= -->
+
+    <footer>
+
+        Made with ❤️ for
+
+        <strong>Kavya (Mendal)</strong>
+
+    </footer>
+
+
+
+    <!-- ======================================================
+         JAVASCRIPT
+    ======================================================= -->
+<!-- ======================================================
+     GALLERY LIGHTBOX
+======================================================= -->
+
+<div id="lightbox" class="lightbox">
+
+    <button id="closeLightbox" class="lightbox-close">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+    <button id="prevImage" class="lightbox-arrow left">
+
+        <i class="fa-solid fa-chevron-left"></i>
+
+    </button>
+
+    <div class="lightbox-content">
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Memory">
+
+        <div id="imageCounter">
+
+            1 / 10
+
+        </div>
+
+    </div>
+
+    <button id="nextImage" class="lightbox-arrow right">
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </button>
+
+</div>
+
+
+<!-- ======================================================
+     FLOATING HEARTS
+======================================================= -->
+
+<div id="heartContainer"></div>
+
+
+<!-- ======================================================
+     FLOATING PETALS
+======================================================= -->
+
+<div id="petalContainer"></div>
+
+
+<!-- ======================================================
+     TOAST MESSAGE
+======================================================= -->
+
+<div id="toastMessage">
+
+    💜
+    Double-click a photo to send some love.
+
+</div>
+
+
+<!-- ======================================================
+     LOADING OVERLAY
+======================================================= -->
+
+<div id="loadingOverlay">
+
+    <div class="loader-card">
+
+        <div class="loader-heart">
+
+            💜
+
+        </div>
+
+        <h2>
+
+            Loading Memories...
+
+        </h2>
+
+        <p>
+
+            Just a little moment...
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ======================================================
+     IMAGE PREVIEW SHADOW
+======================================================= -->
+
+<div id="imageBackdrop"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
